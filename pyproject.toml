@@ -1,0 +1,33 @@
+[project]
+name = "multi-agent-researcher"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Goudham T", email = "goudhamvel.88@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "beautifulsoup4>=4.12.0",
+    "langchain==1.2.11",
+    "langchain-community==0.4.1",
+    "langchain-core==1.2.18",
+    "langchain-openai>=1.1.11",
+    "langchain-openrouter>=0.1.0",
+    "langchainhub>=0.1.21",
+    "lxml>=5.0.0",
+    "python-dotenv>=1.2.4",
+    "readability-lxml>=0.9",
+    "requests>=2.31.0",
+    "rich>=13.7.0",
+    "streamlit>=1.67.0",
+    "tavily-python>=0.8.5",
+    "trafilatura>=2.3.1",
+]
+
+[project.scripts]
+multi-agent-researcher = "multi_agent_researcher:main"
+
+[build-system]
+requires = ["uv_build>=0.12.0,<0.13.0"]
+build-backend = "uv_build"
